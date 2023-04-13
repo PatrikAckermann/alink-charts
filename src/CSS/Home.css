@@ -11,7 +11,10 @@
 }
 
 .home--text {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
     font-size: 1.25rem;
+    line-height: 1.1;
 }
 
 .home--button {

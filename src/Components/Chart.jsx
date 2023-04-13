@@ -1,5 +1,7 @@
 import { useLoaderData } from "react-router-dom"
-import { LineChart, Line, CartesianGrid } from "recharts"
+import BChart from "./BChart"
+import { klientinnen, mails } from "../data"
+import "../CSS/Chart.css"
 
 /* 
  Need a back button to get back to charts
@@ -16,46 +18,33 @@ export default function Chart() {
     var loaderData = useLoaderData()
     return (
         <div className="chart">
-            <h1>{loaderData.title}</h1>
-            <p>{loaderData.description}</p>
-            {loaderData.chart}
+            <h1 className="chart--title">{loaderData.title}</h1>
+            <p className="chart--text">{loaderData.description}</p>
+            <div className="chart--div">
+                {loaderData.chart}
+            </div>
         </div>
     )
 }
 
 export function Loader({params}) {
-    var data = {title: ("title " + params.id), description: ("description " + params.id), chart: <LineChart width={400} height={400} data={testData[params.id - 1]}><Line type="monotone" dataKey="value" stroke="#8884d8"/><CartesianGrid stroke="#ccc" /></LineChart>}
-    console.log(params.id)
+    var title = "Titel konnte nicht geladen werden"
+    var description = "Beschreibung konnte nicht geladen werden"
+    var chart = <></>
+    switch(params.id) {
+        case "1":
+            title = "Klient*innen"
+            description = "Hier werden in einem Balkendiagramm die Klient*innen jeder Abteilung dargestellt."
+            chart = <BChart data={klientinnen}/>;
+            break;
+        case "2":
+            title = "Versendete Mails"
+            description = "Hier werden in einem Balkendiagramm die versendeten Mails jeder Abteilung dargestellt."
+            chart = <BChart data={mails}/>;
+            break;
+        default:
+            break;
+    }
+    var data = {title: title, description: description, chart: chart}
     return data
 }
-
-var testData = [
-    [
-        {
-            name: "test1",
-            value: 1
-        },
-        {
-            name: "test2",
-            value: 2
-        },
-        {
-            name: "test3",
-            value: 4
-        }
-    ],
-    [
-        {
-            name: "test1",
-            value: 4
-        },
-        {
-            name: "test2",
-            value: 5
-        },
-        {
-            name: "test3",
-            value: 6
-        }
-    ]
-]
