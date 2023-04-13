@@ -15,4 +15,5 @@ Before you can deploy the page you have to change a few things:
 
  - If your webpage isn't on the base path "/" (for example on GitHub pages where the page is on `/repository-name/`) you have to go to `src/App.jsx` and edit the route variable in the if statement after the imports to whatever the base route of your page is. So if you want to deploy it on GitHub pages it has to be `/repository-name`. You also have to change the string in the if statement to the hostname. 
  - In `package.json` you have to change homepage to where the page is hosted. 
- - The repository includes a npm package that easily allows you to deploy the site to your GitHub repository. Simply run `npm run deploy`. This automatically builds and deploys it as a seperate branch to your GitHub repository. To make it work you first have to properly set up the connection to your GitHub repository. Now you simply have to activate GitHub pages for it to be accessible on the web.
+
+The repository includes a npm package that easily allows you to deploy the site to your GitHub repository. Simply run `npm run deploy`. This automatically builds and deploys it as a seperate branch to your GitHub repository. To make it work you first have to properly set up the connection to your GitHub repository. Now you simply have to activate GitHub pages for it to be accessible on the web.
