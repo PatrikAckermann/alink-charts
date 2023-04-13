@@ -17,3 +17,7 @@ Before you can deploy the page you have to change a few things:
  - In `package.json` you have to change homepage to where the page is hosted. 
 
 The repository includes a npm package that easily allows you to deploy the site to your GitHub repository. Simply run `npm run deploy`. This automatically builds and deploys it as a seperate branch to your GitHub repository. To make it work you first have to properly set up the connection to your GitHub repository. Now you simply have to activate GitHub pages for it to be accessible on the web.
+
+## Add new Diagram Data
+When adding new data the website automatically adds the new tab.
+You only have to go to `data.jsx` and create a new variable with an identical structure as an existing one. Then you have to go to the data variable at the bottom of the file. There you add a new element to the array. It consists of ["Tab name", data variable, "Short description"]. After you have done this the new data appears on the website.
