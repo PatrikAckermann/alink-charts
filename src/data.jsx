@@ -45,3 +45,28 @@ export var mails = [
         2020: 3245
     }
 ]
+
+export var kopien = [
+    {
+        name: bereiche[0],
+        2021: 1620,
+        2020: 1080
+    },
+    {
+        name: bereiche[1],
+        2021: 7016,
+        2020: 6453
+    },
+    {
+        name: bereiche[2],
+        2021: 4165,
+        2020: 2325
+    },
+    {
+        name: bereiche[3],
+        2021: 399,
+        2020: 348
+    }
+]
+
+export var data = [["Klient*innen", klientinnen, "Diagramm der Anzahl Klient*innen in den verschiedenen Abteilungen."], ["Versendete Mails", mails, "Diagramm der Anzahl versendeter E-Mails in den verschiedenen Abteilungen."], ["Kopien/Ausdrucke", kopien, "Diagramm der Anzahl Kopien/Ausdrucke aus den verschiedenen Abteilungen."]]

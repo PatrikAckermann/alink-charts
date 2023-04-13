@@ -20,3 +20,11 @@
     width: 500px;
     height: 500px;
 }
+
+.custom-tooltip {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #eeeeee;
+    color: black;
+    padding: 15px 10px 15px 10px;
+}

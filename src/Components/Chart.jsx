@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom"
 import BChart from "./BChart"
-import { klientinnen, mails } from "../data"
+import PChart from "./PChart"
+import { data } from "../data"
 import "../CSS/Chart.css"
 
 /* 
@@ -31,20 +32,18 @@ export function Loader({params}) {
     var title = "Titel konnte nicht geladen werden"
     var description = "Beschreibung konnte nicht geladen werden"
     var chart = <></>
-    switch(params.id) {
-        case "1":
-            title = "Klient*innen"
-            description = "Hier werden in einem Balkendiagramm die Klient*innen jeder Abteilung dargestellt."
-            chart = <BChart data={klientinnen}/>;
+    var index = parseInt(params.id) - 1
+
+    switch(params.type) {
+        case "bchart":
+            chart = <BChart data={data[index][1]}/>
             break;
-        case "2":
-            title = "Versendete Mails"
-            description = "Hier werden in einem Balkendiagramm die versendeten Mails jeder Abteilung dargestellt."
-            chart = <BChart data={mails}/>;
+        case "pchart":
+            chart = <PChart data={data[index][1]}/>
             break;
         default:
             break;
     }
-    var data = {title: title, description: description, chart: chart}
-    return data
+    var a = {title: data[index][0], description: data[index][2], chart: chart}
+    return a
 }

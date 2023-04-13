@@ -3,6 +3,7 @@ import Layout from "./Pages/Layout";
 import Chart, {Loader as ChartLoader} from "./Components/Chart"
 import Charts from "./Pages/Charts"
 import Home from "./Pages/Home";
+import TypeSelect from "./Pages/TypeSelect"
 
 export var route = "/"
 
@@ -14,9 +15,12 @@ var router = createBrowserRouter(createRoutesFromElements(
   <Route path={route} element={<Layout/>}>
     <Route path="*"/>
     <Route index element={<Home/>}/>
-    <Route path="charts" element={<Charts />}>
-      <Route index element={<h1 style={{textAlign: "center"}}>Wähle ein Diagramm aus.</h1>}/>
-      <Route path=":id" element={<Chart />} loader={ChartLoader}/>
+    <Route path="charts" element={<TypeSelect/>}>
+      <Route path=":type" element={<Charts/>}>
+        <Route path=":id" element={<Chart />} loader={ChartLoader}/>
+        <Route index element={<h1 style={{textAlign: "center"}}>Wähle ein Diagramm aus.</h1>}/>
+      </Route>
+      <Route index element={<h1 style={{textAlign: "center"}}>Wähle ein Diagrammtyp aus.</h1>}/>
     </Route>
   </Route>
 ))

@@ -1,6 +1,6 @@
 .charts--links {
-    padding-top: 4ch;
     text-align: center;
+    margin-top: 1ch;
 }
 
 .charts--link {
@@ -13,4 +13,8 @@
 .charts--link:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.link--active {
+    text-decoration:underline;
 }
