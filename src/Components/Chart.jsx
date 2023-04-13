@@ -4,17 +4,6 @@ import PChart from "./PChart"
 import { data } from "../data"
 import "../CSS/Chart.css"
 
-/* 
- Need a back button to get back to charts
- Maybe a last/next chart button? This would create a nice transition between the charts
-
- DESKTOP VERSION:
- Title and Description are on the left, Chart is on the right
-
- MOBILE VERSION:
- All go into one column
-*/
-
 export default function Chart() {
     var loaderData = useLoaderData()
     return (

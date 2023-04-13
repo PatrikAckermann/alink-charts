@@ -8,7 +8,6 @@ export default function TypeSelect() {
         if (params.id) {
             path += "/" + params.id
         }
-        console.log(path)
         return path
     }
 
