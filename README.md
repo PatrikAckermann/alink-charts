@@ -6,7 +6,7 @@ You can find the page [here](https://patrikackermann.github.io/alink-charts/)
 The design is based on the [Autismuslink](https://autismuslink.ch) website.
 
 ## Installation
-The gh-pages branch contains a deploy-ready build of the website. The linked page above is hosted from this branch. This build isn't guaranteed to work on your web server. See the next section for more details.
+The gh-pages branch contains a deploy-ready build of the website. The linked page above is hosted from this branch. This build isn't guaranteed to properly work on your web server. See the next section for more details.
 
 ### Modify & Deploy
 If you don't already have it installed, you need to install npm. By running `npm install` in the project directory you can set it up for development. After you have done this you can start the development server with `npm start`.
