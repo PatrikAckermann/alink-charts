@@ -1,8 +1,12 @@
+import "../CSS/Home.css"
+import { Link } from "react-router-dom"
+
 export default function Home() {
     return (
         <div className="home">
-            <h1>Home page goes here</h1>
-            <p>autismuslink Charts zeigt verschiedene Autismuslink Statistiken aus dem Jahresbericht 2021 mit der Recharts Library für React.</p>
+            <h1 className="home--title">Herzlich willkommen</h1>
+            <p className="home--text">Auf dieser Seite werden verschiedene Statistiken des Jahresbericht 2021 der <span className="home--text--link">Stiftung Autismuslink</span> in Form von Diagrammen angezeigt.</p>
+            <Link to="charts" className="home--button">Charts anzeigen</Link>
         </div>
     )
 }

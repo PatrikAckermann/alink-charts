@@ -14,8 +14,7 @@ var router = createBrowserRouter(createRoutesFromElements(
   <Route path={route} element={<Layout/>}>
     <Route path="*"/>
     <Route index element={<Home/>}/>
-    <Route path="charts">
-      <Route index element={<Charts />}/>
+    <Route path="charts" element={<Charts />}>
       <Route path=":id" element={<Chart />} loader={ChartLoader}/>
     </Route>
   </Route>
