@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alink-charts/static/css/main.74e4c747.css",
+    "main.js": "/alink-charts/static/js/main.78b6cee8.js",
+    "index.html": "/alink-charts/index.html",
+    "main.74e4c747.css.map": "/alink-charts/static/css/main.74e4c747.css.map",
+    "main.78b6cee8.js.map": "/alink-charts/static/js/main.78b6cee8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74e4c747.css",
+    "static/js/main.78b6cee8.js"
+  ]
+}
