@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/alink-charts/static/css/main.658a9d8a.css",
-    "main.js": "/alink-charts/static/js/main.958a030e.js",
+    "main.css": "/alink-charts/static/css/main.cff90525.css",
+    "main.js": "/alink-charts/static/js/main.8cec200f.js",
     "index.html": "/alink-charts/index.html",
-    "main.658a9d8a.css.map": "/alink-charts/static/css/main.658a9d8a.css.map",
-    "main.958a030e.js.map": "/alink-charts/static/js/main.958a030e.js.map"
+    "main.cff90525.css.map": "/alink-charts/static/css/main.cff90525.css.map",
+    "main.8cec200f.js.map": "/alink-charts/static/js/main.8cec200f.js.map"
   },
   "entrypoints": [
-    "static/css/main.658a9d8a.css",
-    "static/js/main.958a030e.js"
+    "static/css/main.cff90525.css",
+    "static/js/main.8cec200f.js"
   ]
 }
