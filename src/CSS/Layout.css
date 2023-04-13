@@ -1,0 +1,16 @@
+.charts--links {
+    padding-top: 4ch;
+    text-align: center;
+}
+
+.charts--link {
+    color: #5500cc;
+    text-decoration:none;
+    font-size: 20px;
+    padding: 0 8px 0 8px;
+}
+
+.charts--link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}

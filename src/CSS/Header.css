@@ -1,0 +1,32 @@
+.header {
+    background-color: #111111;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.header--logotitle {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+}
+
+.header--text {
+    font-size: 52px;
+}
+
+.header--buttons {
+    display: flex;
+    margin-right: 2.5rem;
+}
+
+.header--button {
+    margin-left: 10px;
+}
