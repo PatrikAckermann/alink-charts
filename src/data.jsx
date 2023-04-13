@@ -69,4 +69,27 @@ export var kopien = [
     }
 ]
 
-export var data = [["Klient*innen", klientinnen, "Diagramm der Anzahl Klient*innen in den verschiedenen Abteilungen."], ["Versendete Mails", mails, "Diagramm der Anzahl versendeter E-Mails in den verschiedenen Abteilungen."], ["Kopien/Ausdrucke", kopien, "Diagramm der Anzahl Kopien/Ausdrucke aus den verschiedenen Abteilungen."]]
+export var büropflanzen = [
+    {
+        name: bereiche[0],
+        2021: 12,
+        2020: 11
+    },
+    {
+        name: bereiche[1],
+        2021: 10,
+        2020: 15
+    },
+    {
+        name: bereiche[2],
+        2021: 1,
+        2020: 1
+    },
+    {
+        name: bereiche[3],
+        2021: 8,
+        2020: 6
+    }
+]
+
+export var data = [["Klient*innen", klientinnen, "Diagramm der Anzahl Klient*innen in den verschiedenen Abteilungen."], ["Versendete Mails", mails, "Diagramm der Anzahl versendeter E-Mails in den verschiedenen Abteilungen."], ["Kopien/Ausdrucke", kopien, "Diagramm der Anzahl Kopien/Ausdrucke aus den verschiedenen Abteilungen."], ["Büropflanzen", büropflanzen, "Diagramm der Anzahl Pflanzen in den verschiedenen Abteilungen."]]
