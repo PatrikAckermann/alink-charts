@@ -4,8 +4,14 @@ import Chart, {Loader as ChartLoader} from "./Components/Chart"
 import Charts from "./Pages/Charts"
 import Home from "./Pages/Home";
 
+export var route = "/"
+
+if (window.location.hostname === "patrikackermann.github.io") {
+  route = "/alink-charts"
+}
+
 var router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={<Layout/>}>
+  <Route path={route} element={<Layout/>}>
     <Route path="*"/>
     <Route index element={<Home/>}/>
     <Route path="charts">
