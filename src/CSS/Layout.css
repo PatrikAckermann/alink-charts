@@ -21,7 +21,7 @@
     text-decoration:underline;
 }
 
-@media (max-width: 600px) {
+@media screen and (orientation:portrait) {
     .charts--link {
         color: #7557D1;
     }

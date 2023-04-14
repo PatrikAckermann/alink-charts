@@ -76,18 +76,3 @@
         color: white !important;
     }
 }  
-
-/*@media (max-width: 600px) {
-    .home {
-        background-color: #1D1D1D;
-        height: calc(100vh - 116px);
-        color: white;
-    }
-    .home--title {
-        color: #7557D1;
-    }
-
-    .home--button {
-        color: #7557D1;
-    }
-}  */
