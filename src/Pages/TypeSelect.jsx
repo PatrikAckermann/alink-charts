@@ -12,7 +12,7 @@ export default function TypeSelect() {
     }
 
     return (
-        <div>
+        <div className="MainContent">
             <div className="charts--links" style={{paddingTop: "2ch"}}>
                 <NavLink to={getPath("bchart")} className={({isActive}) => isActive ? "charts--link link--active" : "charts--link"}>Balkendiagramm</NavLink>
                 <NavLink to={getPath("pchart")} className={({isActive}) => isActive ? "charts--link link--active" : "charts--link"}>Kreisdiagramm</NavLink>

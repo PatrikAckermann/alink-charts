@@ -1,7 +1,11 @@
 
-
 .chart {
     padding: 4ch 5rem 0 5rem;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+
+    height: calc(100vh - 300px);
 }
 
 .chart--title {
@@ -17,8 +21,9 @@
 }
 
 .chart--div {
-    width: 500px;
-    height: 500px;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .custom-tooltip {
@@ -27,4 +32,29 @@
     border: 1px solid #eeeeee;
     color: black;
     padding: 15px 10px 15px 10px;
+}
+
+.recharts-pie-label-text {
+    fill: black;
+}
+
+.recharts-legend-item-text {
+    color: black !important;
+}
+
+.legend-item-4, .legend-item-5, .legend-item-6, .legend-item-7 {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+@media (max-width: 1200px) {
+    .chart {
+        display: block;
+        height: calc(100vh - 300px);
+    }
+
+    .chart--div {
+        margin-left: 0;
+    }
 }

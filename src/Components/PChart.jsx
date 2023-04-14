@@ -2,19 +2,20 @@ import { PieChart, Pie, Text, Cell, Legend, ResponsiveContainer, Tooltip } from 
 
 export default function PChart(props) {
     return (
-        <ResponsiveContainer>
-            <PieChart>
-                <Pie data={props.data} cx="50%" cy="50%" outerRadius={60} label={customLabel} labelLine={false} dataKey="2020">
-                    <Cell fill="red"/>
-                    <Cell fill="yellow"/>
-                    <Cell fill="green"/>
-                    <Cell fill="blue"/>
+        <ResponsiveContainer width="100%" height="100%">
+            <PieChart width="100%" height="100%">
+                <Legend/>
+                <Pie data={props.data} cx="50%" cy="50%" outerRadius={75} dataKey="2020">
+                    <Cell fill="#111111"/>
+                    <Cell fill="#5500cc"/>
+                    <Cell fill="#AAAAAA"/>
+                    <Cell fill="#DDDAF1"/>
                 </Pie>
-                <Pie data={props.data} cx="50%" cy="50%" innerRadius={65} outerRadius={80} label={customLabel} labelLine={false} dataKey="2021">
-                    <Cell fill="red"/>
-                    <Cell fill="yellow"/>
-                    <Cell fill="green"/>
-                    <Cell fill="blue"/>
+                <Pie data={props.data} cx="50%" cy="50%" innerRadius={80} outerRadius={100} label={customLabel} labelLine={false} dataKey="2021">
+                    <Cell fill="#111111"/>
+                    <Cell fill="#5500cc"/>
+                    <Cell fill="#AAAAAA"/>
+                    <Cell fill="#DDDAF1"/>
                 </Pie>
                 <Tooltip content={(a) => customToolTip(a, props.data)}/>
             </PieChart>
@@ -22,8 +23,9 @@ export default function PChart(props) {
     )
 }
 
-function customLabel({percent}) {
-    return <text>{(percent * 100).toFixed(0)}</text>
+function customLabel({percent, x, y, payload}) {
+    console.log(payload)
+    return <text fill="black" x={x - 18} y={y + 4}>{`${payload["2021"]}`}</text>
 }
 
 function customToolTip({payload}, data) {

@@ -8,8 +8,10 @@ export default function Chart() {
     var loaderData = useLoaderData()
     return (
         <div className="chart">
-            <h1 className="chart--title">{loaderData.title}</h1>
-            <p className="chart--text">{loaderData.description}</p>
+            <div className="chart--textdiv">
+                <h1 className="chart--title">{loaderData.title}</h1>
+                <p className="chart--text">{loaderData.description}</p>
+            </div>
             <div className="chart--div">
                 {loaderData.chart}
             </div>
@@ -18,8 +20,6 @@ export default function Chart() {
 }
 
 export function Loader({params}) {
-    var title = "Titel konnte nicht geladen werden"
-    var description = "Beschreibung konnte nicht geladen werden"
     var chart = <></>
     var index = parseInt(params.id) - 1
 
