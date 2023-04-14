@@ -59,7 +59,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (orientation:portrait) {
     .chart--title {
         color: #7557D1;
     }

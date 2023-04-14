@@ -12,7 +12,7 @@
   height: calc(100vh - 120px);
 }
 
-@media (max-width: 600px) {
+@media screen and (orientation:portrait) {
   body {
     background-color: #1D1D1D;
   }

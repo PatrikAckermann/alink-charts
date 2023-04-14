@@ -28,7 +28,7 @@
     border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media screen and (orientation:portrait) {
     .home {
         background-color: #1D1D1D;
         height: calc(100vh - 116px);
