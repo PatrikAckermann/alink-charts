@@ -1,4 +1,5 @@
 import { PieChart, Pie, Text, Cell, Legend, ResponsiveContainer, Tooltip } from "recharts"
+import "../CSS/Chart.css"
 
 export default function PChart(props) {
     return (
@@ -25,7 +26,7 @@ export default function PChart(props) {
 
 function customLabel({percent, x, y, payload}) {
     console.log(payload)
-    return <text fill="black" x={x - 18} y={y + 4}>{`${payload["2021"]}`}</text>
+    return <text className="pieLabel" x={x - 18} y={y + 4}>{`${payload["2021"]}`}</text>
 }
 
 function customToolTip({payload}, data) {

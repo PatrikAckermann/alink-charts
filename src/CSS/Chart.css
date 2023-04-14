@@ -58,3 +58,36 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .chart--title {
+        color: #7557D1;
+    }
+
+    .chart {
+        min-height: 300px;
+    }
+
+    .pieLabel {
+        fill: white !important;
+    }
+    
+    .recharts-legend-item-text {
+        color: white !important;
+    }
+}  
+
+/*@media (max-width: 600px) {
+    .home {
+        background-color: #1D1D1D;
+        height: calc(100vh - 116px);
+        color: white;
+    }
+    .home--title {
+        color: #7557D1;
+    }
+
+    .home--button {
+        color: #7557D1;
+    }
+}  */

@@ -20,3 +20,9 @@
 .link--active {
     text-decoration:underline;
 }
+
+@media (max-width: 600px) {
+    .charts--link {
+        color: #7557D1;
+    }
+}  

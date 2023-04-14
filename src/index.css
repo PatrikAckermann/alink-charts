@@ -11,3 +11,14 @@
 .MainContent {
   height: calc(100vh - 120px);
 }
+
+@media (max-width: 600px) {
+  body {
+    background-color: #1D1D1D;
+  }
+
+  .MainContent {
+    height: calc(100vh - 80px);
+    color: white;
+  }
+} 

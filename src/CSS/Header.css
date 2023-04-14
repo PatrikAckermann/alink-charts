@@ -31,3 +31,22 @@
     margin-left: 10px;
     font-size: 1.25rem;
 }
+
+@media (max-width: 600px) {
+    .header {
+      height: 80px;
+      display: block;
+    }
+
+    .header--logotitle {
+        width: 90%;
+    }
+
+    .header--text {
+        font-size: 32px;
+    }
+
+    .header--buttons {
+        display: none;
+    }
+  }
